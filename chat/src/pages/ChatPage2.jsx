@@ -9,7 +9,7 @@ const ChatPage2 = () => {
     if (input.trim() !== "") {
       try {
         // Make the POST request to the API
-        const response = await axios.post("http://127.0.0.1:8000/chat/padel/", {
+        const response = await axios.post("http://209.97.169.231:1000/chat/padel/", {
           message: input, // Sending the message as `messagegf`
         });
 
@@ -33,7 +33,7 @@ error.response.data : error.message);
     <div className="flex flex-col h-screen bg-gray-100">
       {/* Header */}
       <div className="bg-green-600 text-white p-4 flex items-center">
-        <h1 className="text-lg font-semibold">Chat</h1>
+        <h1 className="text-lg font-semibold">PADEL AI</h1>
       </div>
 
       {/* Messages */}
